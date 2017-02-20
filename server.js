@@ -7,8 +7,8 @@ app.get('/',(req, res) => {
   res.sendFile(__dirname + '/index.html');
   // res.send('Hello world Sonbkt');
 })
-// app.post('/quotes', (req, res) => {
-//   console.log(req.body);
-// })
+app.post('/quotes', (req, res) => {
+  console.log(req.body);
+})
 
 app.listen(3000);
